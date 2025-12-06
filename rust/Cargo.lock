@@ -92,6 +92,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "ds1388"
+version = "0.1.0"
+dependencies = [
+ "bits",
+ "bql",
+ "common",
+ "glib-sys",
+ "hwcore",
+ "migration",
+ "qom",
+ "system",
+ "trace",
+ "util",
+]
+
+[[package]]
 name = "either"
 version = "1.12.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"

@@ -1,0 +1,31 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+
+[package]
+name = "ds1338"
+version = "0.1.0"
+authors = ["Cao Junze <caojunze424@openatom.club>"]
+description = "DS1338 RTC device model for QEMU"
+resolver = "2"
+publish = false
+
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+glib-sys.workspace = true
+bits = { path = "../../../bits" }
+common = { path = "../../../common" }
+util = { path = "../../../util" }
+bql = { path = "../../../bql" }
+migration = { path = "../../../migration" }
+qom = { path = "../../../qom" }
+system = { path = "../../../system" }
+hwcore = { path = "../../../hw/core" }
+trace = { path = "../../../trace" }
+libc = { workspace = true }
+
+[lints]
+workspace = true

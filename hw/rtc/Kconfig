@@ -1,7 +1,12 @@
 config DS1338
     bool
     depends on I2C
+    select DS1338_C if !HAVE_RUST
+    select X_DS1338_RUST if HAVE_RUST
     default y if I2C_DEVICES
+
+config DS1338_C
+    bool
 
 config M41T80
     bool
